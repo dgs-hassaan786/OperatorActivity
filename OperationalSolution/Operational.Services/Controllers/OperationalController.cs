@@ -37,5 +37,63 @@ namespace Operational.Services.Controllers
                 return InternalServerError(ex);
             }
         }
+
+        [HttpGet]
+        [Route("websites")]
+        public async Task<IHttpActionResult> GetWebsite()
+        {
+            try
+            {
+                var result = await _Operational.GetDistinctWebsites();
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+
+                return InternalServerError(ex);
+            }
+        }
+
+        [HttpGet]
+        [Route("devices")]
+        public async Task<IHttpActionResult> GetDevices()
+        {
+            try
+            {
+                var result = await _Operational.GetDistinctDevices();
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+
+                return InternalServerError(ex);
+            }
+        }
+
+        [HttpPost]
+        [Route("")]
+        public async Task<IHttpActionResult> Post([FromBody] AdvanceSearchVM model)
+        {
+            try
+            {
+                var result = await _Operational.Get(model.Device,model.Website, model.From,model.To);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+
+                return InternalServerError(ex);
+            }
+        }
+
+    }
+
+
+    public class AdvanceSearchVM
+    {
+        public string Device { get; set; }
+        public string Website { get; set; }
+        public string To { get; set; }
+        public string From { get; set; }
     }
 }

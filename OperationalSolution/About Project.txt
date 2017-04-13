@@ -1,0 +1,35 @@
+//Author: Muhammad Hassaan Khan
+//
+
+Hi team as per the requirement I've tried to perform the best. Let me discuss the issues and clarify them accordingly
+
+Scenario 1:
+
+-- Yup code and db have errors 
+-- just corrected and apply the optimize approach from the beginning
+
+-- The Architectural structure is simple, low coupled and high cohesion as one could understand
+-- Note: I have used much of my selfed libraries
+
+-- Similarly SOA is implemented and Clients are separated out inorder to achieve horizontal scaling
+-- I just used webapi2 as SOA and inside client application implemented the angularjs with MVC
+
+-- Lets discuss the strategies
+
+DB
+-- There are lack of relation and normalization
+-- SP are not optimized
+-- similarly with (no lock) was not implemented
+
+-- why i m calculating fields inside the sp? (there were repetition and it could be performance downgrade) so i just moved the calculation field inside the business logic
+
+Domain
+-- Implemented Repository Pattern with Dapper
+
+Client
+-- I have provided the 2 views
+1) the simple one as required
+2) Sum fun and advancement
+
+If you have any issue and required clarification, kindly contact me.
+Thanks

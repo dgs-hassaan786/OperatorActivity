@@ -11,31 +11,21 @@ namespace Operational.Portal.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return View("OperatorReport");
         }
 
         public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
+        {            
             return View();
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
+        
 
         public ActionResult OperatorReport()
         {            
             return View();
         }
 
-        public ActionResult OperatorProductivityData()
-        {
-            return View();
-        }
+       
     }
 }

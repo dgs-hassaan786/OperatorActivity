@@ -19,7 +19,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operational.Services", "Ope
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DBChanges", "DBChanges", "{EC9104FC-F5B1-4660-9304-B577660F1E25}"
 	ProjectSection(SolutionItems) = preProject
-		C:\Users\hassan.khan\Desktop\[OperatorProductivity].Optimized.sql = C:\Users\hassan.khan\Desktop\[OperatorProductivity].Optimized.sql
+		[OperatorProductivity].Custom.sql = [OperatorProductivity].Custom.sql
+		[OperatorProductivity].Optimized.sql = [OperatorProductivity].Optimized.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{A1C91A5B-0696-4A32-9D33-55101874E2B2}"
+	ProjectSection(SolutionItems) = preProject
+		About Project.txt = About Project.txt
 	EndProjectSection
 EndProject
 Global

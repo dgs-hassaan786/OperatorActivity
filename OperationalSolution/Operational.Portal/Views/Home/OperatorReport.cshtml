@@ -23,14 +23,14 @@
             <tr ng-repeat="o in operationalReportData track by $index" id="s-{{o.ID}}">
                 <td>{{$index+1}}</td>
                 <td>{{o.Name}}</td>
-                <td>{{o.ProactiveSent}}</td>
-                <td>{{o.ProactiveAnswered}}</td>
-                <td>{{o.ProactiveResponseRate}}</td>
-                <td>{{o.ReactiveReceived}}</td>
-                <td>{{o.ReactiveAnswered}}</td>
-                <td>{{o.ReactiveResponseRate}}</td>
-                <td>{{o.TotalChatLength}}</td>
-                <td>{{o.AverageChatLength}}</td>
+                <td>{{o.ProactiveSent == 0 ? '-' : o.ProactiveSent}}</td>
+                <td>{{o.ProactiveAnswered == 0 ? '-' : o.ProactiveAnswered}}</td>
+                <td>{{o.ProactiveResponseRate == 0 ? '-' : o.ProactiveResponseRate}}</td>
+                <td>{{o.ReactiveReceived == 0 ? '-' : o.ReactiveReceived}}</td>
+                <td>{{o.ReactiveAnswered == 0 ? '-' : o.ReactiveAnswered}}</td>
+                <td>{{o.ReactiveResponseRate == 0 ? '-' : o.ReactiveResponseRate}}</td>
+                <td>{{o.TotalChatLength == 0 ? '-' : o.TotalChatLength}}</td>
+                <td>{{o.AverageChatLength == 0 ? '-' : o.AverageChatLength}}</td>
             </tr>
         </tbody>
     </table>

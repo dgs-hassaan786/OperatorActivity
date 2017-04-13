@@ -1,0 +1,176 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+.st-sort-ascent:before {
+    content: '\25B2';
+}
+
+.st-sort-descent:before {
+    content: '\25BC';
+}
+.number-pagination {
+    float: left;
+}
+.Page-size {
+    float: right;
+    margin: 18px 0 0;
+}
+.no-pad {
+    padding: 0px;
+}
+.pagecount-right select {
+    -moz-appearance: none;
+    border: 1px solid #ccc;
+    padding: 2px;
+    width: 150px;
+}
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 950px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.data-table td {
+    border-radius: 0 !important;
+    color: #555;
+    font-size: 13px;
+    line-height: normal;
+    padding: 7px 4px 7px 12px;
+}
+
+.data-table [type="checkbox"] + label {
+    height: 20px !important;
+}
+
+.data-table {
+    width: 100% !important;
+}
+
+    .data-table .odd {
+        background: rgb(247, 247, 247);
+    }
+
+    .data-table .even {
+        background: rgb(235, 235, 235);
+    }
+
+    .data-table td span {
+        border-radius: 0 !important;
+        width: 100%;
+    }
+
+    .data-table tr {
+        -webkit-transition: background 0.3s linear 0s;
+        -moz-transition: background 0.3s linear 0s;
+        -ms-transition: background 0.3s linear 0s;
+        -o-transition: background 0.3s linear 0s;
+        transition: background 0.3s linear 0s;
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+    }
+
+        .data-table tr:nth-child(2n+1) {
+            background-color: #fff;
+        }
+
+        .data-table tr:hover {
+            background: #fff;
+        }
+
+.data-table-noimg {
+    background-image: none !important;
+}
+
+.data-table tr th [type="checkbox"] + label:before {
+    border: 2px solid #fff;
+}
+
+.data-table tr th [type="checkbox"]:checked + label:before {
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #03a9f4;
+    border-bottom: 2px solid #03a9f4;
+}
+
+.data-table th {
+    background-color: #1e1e2d;
+    border: 0 none;
+    border-radius: 0 !important;
+    color: #fff !important;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: normal;
+    padding: 6px 3px;
+    text-indent: 8px;
+    vertical-align: top;
+}
+.FilterGrid {
+    background-color: #eee;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px #ddd solid;
+}
+
+.selectbox {
+    background: #fff;
+    color: #333;
+    padding: 8px;
+    line-height: 14px;
+    border-radius: 4px;
+    border-width: 0 1px 4px;
+    border: 1px solid #ccc;
+}
