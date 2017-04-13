@@ -21,6 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DBChanges", "DBChanges", "{
 	ProjectSection(SolutionItems) = preProject
 		[OperatorProductivity].Custom.sql = [OperatorProductivity].Custom.sql
 		[OperatorProductivity].Optimized.sql = [OperatorProductivity].Optimized.sql
+		[OperatorProductivity].Script.sql = [OperatorProductivity].Script.sql
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{A1C91A5B-0696-4A32-9D33-55101874E2B2}"
