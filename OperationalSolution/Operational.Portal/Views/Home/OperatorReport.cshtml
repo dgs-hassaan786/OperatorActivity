@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Operator Report";
+}
+
+<h2>Operator Report</h2>
+<div ng-controller="OperationalController" ng-init="getRecords()">
+    <table class="table table-responsive table-striped table-hover table-bordered" id="tblReports" ng-cloak>
+        <thead>
+            <tr>
+                <th>S.No.</th>
+                <th>Operator Name</th>
+                <th>Proactive Sent</th>
+                <th>Proactive Answered</th>
+                <th>Proactive Response Rate (%)</th>
+                <th>Reactive Received</th>
+                <th>Reactive Answered</th>
+                <th>Reactive Response Rate (%)</th>
+                <th>Total Chat Length</th>
+                <th>Average Chat Length</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="o in operationalReportData track by $index" id="s-{{o.ID}}">
+                <td>{{$index+1}}</td>
+                <td>{{o.Name}}</td>
+                <td>{{o.ProactiveSent}}</td>
+                <td>{{o.ProactiveAnswered}}</td>
+                <td>{{o.ProactiveResponseRate}}</td>
+                <td>{{o.ReactiveReceived}}</td>
+                <td>{{o.ReactiveAnswered}}</td>
+                <td>{{o.ReactiveResponseRate}}</td>
+                <td>{{o.TotalChatLength}}</td>
+                <td>{{o.AverageChatLength}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
